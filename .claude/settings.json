@@ -6,13 +6,13 @@
 				"hooks": [
 					{
 						"type": "command",
-						"command": "pnpm run format 2>/dev/null || true",
+						"command": "output=$(pnpm run lint-and-format:fix 2>&1) || { echo \"$output\" >&2; exit 2; }",
 						"timeout": 30,
-						"statusMessage": "Formatting with biome..."
+						"statusMessage": "Fixing lint and format with biome..."
 					},
 					{
 						"type": "command",
-						"command": "out=$(pnpm exec tsc --noEmit 2>&1); code=$?; if [ $code -ne 0 ]; then jq -n --arg out \"$out\" '{decision:\"block\", reason: (\"TypeScript errors found:\\n\" + $out)}'; fi",
+						"command": "output=$(pnpm run ts:check 2>&1) || { echo \"$output\" >&2; exit 2; }",
 						"timeout": 60,
 						"statusMessage": "Checking TypeScript..."
 					}
