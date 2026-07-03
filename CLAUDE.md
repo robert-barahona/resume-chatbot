@@ -1,6 +1,6 @@
 @AGENTS.md
 
-# CV Chatbot — Claude Code Guidelines
+# Resume Chatbot — Claude Code Guidelines
 
 ## Project Overview
 
@@ -8,23 +8,23 @@ This is an AI-powered portfolio chatbot built with Next.js, TypeScript, and Tail
 
 ## Code Style
 
-### Components
+### React
 
-- Always use Arrow Function Components
+- Avoid using `useEffect` whenever possible
 
-```tsx
-// ✅ Correct
-const MyComponent = () => {
-  return <div>Hello</div>
-}
+### React Component Style
 
-export default MyComponent
+When creating or modifying React components, strictly follow these conventions:
 
-// ❌ Wrong
-function MyComponent() {
-  return <div>Hello</div>
-}
-```
+- Exports: always use `export const`, never `export default` (unless the framework requires it, e.g. `page.tsx` in Next.js App Router).
+- Component typing: type the component using React's `FC`, imported as `import type { FC } from "react"`. Example: `export const MyComponent: FC<MyComponentProps> = (...) => (...)`
+- Props: always define an `interface` (not `type`) named `<ComponentName>Props`, with every property marked as `readonly`.
+- Implicit return: use an arrow function with a direct return (no `return` keyword, no `{ }` block) whenever the component body is a single JSX expression.
+- Props destructuring: destructure props directly in the function parameters, don't access them via `props.something`.
+
+### Functions
+
+- Always use arrow functions, never `function` declarations or expressions. This applies to everything: utility functions, hooks, event handlers, API route handlers, etc.
 
 ### Reusable Components
 
@@ -42,6 +42,7 @@ function MyComponent() {
 
 - Always type props explicitly using interfaces or types
 - Place shared types in `/types`
+- Always use `const` over `let` whenever possible; only use `let` when a variable must be reassigned
 - Avoid using `any`
 
 ## Environment Variables
