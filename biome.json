@@ -6,8 +6,7 @@
 		"useIgnoreFile": true
 	},
 	"files": {
-		"ignoreUnknown": true,
-		"includes": ["**", "!node_modules", "!.next", "!dist", "!build"]
+		"ignoreUnknown": true
 	},
 	"formatter": {
 		"enabled": true,
@@ -25,6 +24,15 @@
 						"allow": ["error", "info", "warn"]
 					}
 				}
+			},
+			"nursery": {
+				"useSortedClasses": {
+					"level": "error",
+					"fix": "safe"
+				}
+			},
+			"style": {
+				"noDefaultExport": "warn"
 			}
 		},
 		"domains": {
