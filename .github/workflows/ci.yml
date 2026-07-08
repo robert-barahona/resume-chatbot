@@ -8,7 +8,20 @@ on:
 
 jobs:
   ci:
+    name: ${{ matrix.name }}
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: Lint & format check
+            run: pnpm run lint-and-format:check
+          - name: Type check
+            run: pnpm run ts:check
+          - name: Unused files/deps check
+            run: pnpm run knip
+          - name: Build
+            run: pnpm run build
     steps:
       - uses: actions/checkout@v4
 
@@ -23,14 +36,4 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - name: Lint & format check
-        run: pnpm run lint-and-format:check
-
-      - name: Type check
-        run: pnpm run ts:check
-
-      - name: Unused files/deps check
-        run: pnpm run knip
-
-      - name: Build
-        run: pnpm run build
+      - run: ${{ matrix.run }}
