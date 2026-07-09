@@ -29,7 +29,7 @@ export const ChatInput: FC<ChatInputProps> = ({ onSend, disabled }) => {
 				onChange={(event) => setValue(event.target.value)}
 				disabled={disabled}
 				placeholder="Ask about Roberto..."
-				className="flex-1 rounded-xl bg-surface-primary px-4 py-2.5 text-sm text-text-primary placeholder:text-text-muted focus:border-accent focus:outline-none disabled:opacity-60"
+				className="flex-1 rounded-xl bg-surface-primary px-4 py-2.5 text-text-primary placeholder:text-text-muted focus:border-accent focus:outline-none disabled:opacity-60 sm:text-sm"
 			/>
 			<button
 				type="submit"
