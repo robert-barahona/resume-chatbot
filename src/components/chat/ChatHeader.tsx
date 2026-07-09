@@ -6,7 +6,7 @@ export const ChatHeader = () => (
 	<header className="border-border border-b px-4 py-4 sm:px-6">
 		<div className="mx-auto flex w-full max-w-3xl items-center justify-between gap-6">
 			<div className="flex flex-col">
-				<h1 className="font-semibold text-text-primary text-base">
+				<h1 className="font-semibold text-base text-text-primary">
 					Roberto Barahona - TEST
 				</h1>
 				<p className="text-sm text-text-secondary">Senior Frontend Engineer</p>
