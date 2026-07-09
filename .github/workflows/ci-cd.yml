@@ -7,14 +7,14 @@ on:
     branches: [main]
 
 jobs:
-  ci:
+  checks:
     name: ${{ matrix.name }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         include:
-          - name: Lint & format
+          - name: Linting and Formatting
             run: pnpm run lint-and-format:check
           - name: Typescript
             run: pnpm run ts:check
@@ -39,8 +39,8 @@ jobs:
       - run: ${{ matrix.run }}
 
   deploy:
-    name: Deploy
-    needs: ci
+    name: Deploy to Prod
+    needs: checks
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     concurrency:
