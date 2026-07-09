@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Geist } from "next/font/google"
 import "../styles/globals.css"
+import { Analytics } from "@vercel/analytics/next"
 import type { FC, PropsWithChildren } from "react"
 import { ThemeScript } from "@/components/ui/ThemeScript"
 import { cn } from "@/utils/cn"
@@ -25,7 +26,10 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
 		<head>
 			<ThemeScript />
 		</head>
-		<body className="flex min-h-full flex-col">{children}</body>
+		<body className="flex min-h-full flex-col">
+			{children}
+			<Analytics />
+		</body>
 	</html>
 )
 
