@@ -7,7 +7,7 @@ export const ChatHeader = () => (
 		<div className="mx-auto flex w-full max-w-3xl items-center justify-between gap-6">
 			<div className="flex flex-col">
 				<h1 className="font-semibold text-base text-text-primary">
-					Roberto Barahona - TEST
+					Roberto Barahona
 				</h1>
 				<p className="text-sm text-text-secondary">Senior Frontend Engineer</p>
 			</div>
