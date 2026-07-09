@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Resume Chatbot
 
-## Getting Started
+An AI-powered portfolio chatbot that lets recruiters interactively ask questions about **Roberto Barahona's** professional profile — instead of reading a traditional resume.
 
-First, run the development server:
+## Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[robert-barahona.dev](https://robert-barahona.dev)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Screenshot
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![Resume Chatbot Screenshot](screenshot.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- **Conversational resume** — ask natural-language questions about experience, skills, and achievements, answered from a structured resume context.
+- **Streaming responses** — replies are streamed from the Anthropic API and progressively revealed in the UI for a smooth, typing-like effect.
+- **Scoped answers** — the assistant only answers questions related to Roberto's professional background and politely redirects anything off-topic.
+- **Suggested questions** — quick-start prompts shown on the empty chat state to help recruiters get going.
+- **Markdown-formatted messages** — assistant responses support rich formatting (lists, links, emphasis) via GitHub-flavored Markdown.
+- **Typing indicator** — visual feedback while waiting for the assistant's response.
+- **Light/dark/system theme** — toggleable theme with persistence in local storage and automatic sync with the OS preference.
+- **Responsive design** — clean, mobile-friendly chat layout built with Tailwind CSS.
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js](https://nextjs.org) — App Router, API routes
+- [React](https://react.dev)
+- [TypeScript](https://www.typescriptlang.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Anthropic SDK](https://github.com/anthropics/anthropic-sdk-typescript) — Claude-powered chat completions
+- [react-markdown](https://github.com/remarkjs/react-markdown) + [remark-gfm](https://github.com/remarkjs/remark-gfm) — Markdown rendering
+- [Biome](https://biomejs.dev) — linting and formatting
+- [Knip](https://knip.dev) — unused code/dependency detection
+- [Vercel](https://vercel.com) — deployment
