@@ -60,7 +60,7 @@ export const POST = async (request: Request): Promise<Response> => {
 
 	const encoder = new TextEncoder()
 	const textStream = new ReadableStream<Uint8Array>({
-		async start(controller) {
+		start: async (controller) => {
 			try {
 				let result = first
 				while (!result.done) {
