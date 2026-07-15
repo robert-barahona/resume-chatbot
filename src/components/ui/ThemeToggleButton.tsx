@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import type { FC } from "react"
-import { useTheme } from "@/hooks/useTheme"
+import { useTheme } from "@/hooks/shared/useTheme"
 import type { Theme } from "@/types/themeTypes"
 import { cn } from "@/utils/cn"
 

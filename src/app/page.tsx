@@ -4,7 +4,7 @@ import { ChatHeader } from "@/components/feature/chat/ChatHeader"
 import { ChatInput } from "@/components/feature/chat/ChatInput"
 import { ChatMessages } from "@/components/feature/chat/ChatMessages"
 import { SuggestedQuestions } from "@/components/feature/chat/SuggestedQuestions"
-import { useChat } from "@/hooks/useChat"
+import { useChat } from "@/hooks/feature/chat/useChat"
 
 const Home = () => {
 	const { messages, isLoading, isWaitingForResponse, sendMessage } = useChat()
