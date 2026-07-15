@@ -40,6 +40,13 @@ Always split components into the following folders under `src/components`:
 - Place page-specific components in the matching `components/feature/<name>` folder
 - Example: for `/app/auth.tsx` create `/components/feature/auth/LoginForm.tsx`, etc.
 
+### Hooks Folder Structure
+
+Always split hooks into the following folders under `src/hooks`:
+
+- `hooks/shared`: generic, reusable hooks with no business logic (useDebounce, useLocalStorage, useMediaQuery).
+- `hooks/feature/<name>`: hooks specific to a domain/feature (useChat, useCheckout, useUserProfile).
+
 ## TypeScript
 
 - Always type props explicitly using interfaces or types
