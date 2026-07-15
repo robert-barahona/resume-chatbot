@@ -26,17 +26,19 @@ When creating or modifying React components, strictly follow these conventions:
 
 - Always use arrow functions, never `function` declarations or expressions. This applies to everything: utility functions, hooks, event handlers, API route handlers, etc.
 
-### Reusable Components
+### Component Folder Structure
 
-- Always create reusable components whenever possible
-- Place all reusable UI components in `src/components/ui`
-- Examples: buttons, inputs, badges, bubbles, indicators, cards
+Always split components into the following folders under `src/components`:
+
+- `components/ui`: base, reusable components with no business logic (Button, Input, Card, Badge, Modal).
+- `components/layout`: page structure (Header, Footer, Sidebar, PageWrapper, Grid).
+- `components/feature/<name>`: components specific to a domain/feature (UserProfile, CheckoutForm, ProductCard).
 
 ### Page Components
 
 - Split every page into smaller components
-- Create a folder with the page name inside `/components` for page-specific components
-- Example: for `/app/page.tsx` create `/components/home/ChatHeader.tsx`, `/components/home/ChatMessages.tsx`, etc.
+- Place page-specific components in the matching `components/feature/<name>` folder
+- Example: for `/app/auth.tsx` create `/components/feature/auth/LoginForm.tsx`, etc.
 
 ## TypeScript
 
