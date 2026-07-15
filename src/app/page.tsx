@@ -1,9 +1,9 @@
 "use client"
 
-import { ChatHeader } from "@/components/chat/ChatHeader"
-import { ChatInput } from "@/components/chat/ChatInput"
-import { ChatMessages } from "@/components/chat/ChatMessages"
-import { SuggestedQuestions } from "@/components/chat/SuggestedQuestions"
+import { ChatHeader } from "@/components/feature/chat/ChatHeader"
+import { ChatInput } from "@/components/feature/chat/ChatInput"
+import { ChatMessages } from "@/components/feature/chat/ChatMessages"
+import { SuggestedQuestions } from "@/components/feature/chat/SuggestedQuestions"
 import { useChat } from "@/hooks/useChat"
 
 const Home = () => {
