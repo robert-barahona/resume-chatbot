@@ -1,10 +1,10 @@
 type MessageRole = "user" | "assistant"
 
-export type ChatbotMessage = {
+export interface ChatbotMessage {
 	role: MessageRole
 	content: string
 }
 
-export type ChatRequestBody = {
+export interface ChatRequestBody {
 	messages: ChatbotMessage[]
 }
