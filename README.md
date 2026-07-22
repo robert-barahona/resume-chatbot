@@ -8,7 +8,7 @@ An AI-powered portfolio chatbot that lets recruiters interactively ask questions
 
 ## Screenshot
 
-![Resume Chatbot Screenshot](screenshot.png)
+![Resume Chatbot Screenshot](preview.png)
 
 ## Features
 
