@@ -1,62 +1,89 @@
 export const RESUME_CONTEXT = `
 ROBERTO BARAHONA
 SENIOR FRONTEND ENGINEER
-robert.barahona.1998@gmail.com
-+593 98 439 6922
-linkedin: robert-barahona
-Quito, Ecuador (Remote OK)
+
+robert.barahona.1998@gmail.com | +593 98 439 6922
+linkedin.com/in/robert-barahona | robert-barahona.dev | github.com/robert-barahona
+Quito, Ecuador — Remote
+
+─────────────────────────────────────────────────────
 
 PROFESSIONAL SUMMARY
-Frontend Engineer with 5+ years of experience building high-quality web and mobile products for US companies — remotely from Ecuador. Specialized in React, Next.js, and React Native, with a strong focus on performance, scalability, and user experience. Currently leveraging AI-powered development tools — including Claude Code — to ship faster, write cleaner code, and tackle complex problems with greater confidence. Passionate about integrating AI into modern workflows and proven at delivering large-scale, real-time applications used by thousands of people.
+
+Senior Frontend Engineer with 5+ years of experience architecting and shipping high-performance web and mobile products for US companies — remotely from Ecuador. Specialized in React, Next.js, TypeScript, and React Native, with deep expertise in component architecture, design systems, accessibility (a11y), Core Web Vitals optimization, and agile delivery. Early adopter of AI-assisted development — Claude Code certified by Anthropic — consistently shipping faster without sacrificing code quality. Proven at leading frontend from zero to production in early-stage startup environments.
+
+─────────────────────────────────────────────────────
 
 TECHNICAL SKILLS
-Frontend: React, Next.js, TypeScript, HTML5, CSS3, Tailwind CSS, React Query, SWR
-Mobile: React Native (iOS & Android), Flutter
-AI Tools: Claude Code, GitHub Copilot, Anthropic API, OpenAI API
-Backend / APIs: REST APIs, WebSockets, GraphQL (consumer), Node.js (basic)
-DevOps / Tools: Git, GitHub, Vercel, CI/CD pipelines, i18n
-Languages: Spanish (Native), English (Intermediate-Advanced)
+
+Frontend      React, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS
+State Mgmt    Redux, Zustand, React Query, SWR, Context API
+Mobile        React Native (iOS & Android), Flutter
+Testing       Playwright, Vitest, React Testing Library
+AI Tools      Claude Code (Certified), GitHub Copilot, Anthropic API, Prompt Engineering
+Design        Figma, Design Systems, Component Architecture, Accessibility (WCAG 2.1 / a11y)
+Performance   Core Web Vitals, Code Splitting, Lazy Loading, Bundle Optimization, SSR/SSG/ISR
+DevOps        Git, GitHub, Vercel, CI/CD Pipelines, GitHub Actions, i18n
+Backend       REST APIs, WebSockets, GraphQL (consumer), Node.js (basic)
+
+─────────────────────────────────────────────────────
 
 EXPERIENCE
 
 Frontend Engineer — Remote (United States)
-Passes Inc | Jul 2023 – Jun 2026
-- Built monetization tools, marketplace features, real-time chat, livestreams, and creator admin dashboards for a content monetization platform called Passes — enabling subscription management, paywall flows, and revenue tracking.
-- Developed the web platform using Next.js, TypeScript, React, and Tailwind CSS, implementing SWR and React Query for efficient real-time data fetching and cache management.
-- Implemented internationalization (i18n) to support multiple languages, translating 80% of the platform into Spanish and expanding the reach to a global creator audience.
-- Developed the mobile app in React Native, delivering the full consumer experience on iOS and Android.
-- Redesigned full pages end-to-end, improving UI consistency, maintainability, and overall performance across the platform.
-- Adopted Claude Code as a core development tool, consistently delivering 3–4 additional tickets per week compared to previous workflows — increasing output without sacrificing code quality.
+Passes Inc  |  Jul 2023 – Jun 2026
+
+- Architected and shipped monetization tools, marketplace features, real-time chat, livestreams, and creator admin dashboards for a content platform serving thousands of creators globally — directly enabling subscription revenue and paywall conversion flows.
+- Engineered the web platform using Next.js, TypeScript, React, and Tailwind CSS, implementing React Query and SWR for real-time data fetching — reducing API over-fetching and improving perceived performance across the platform.
+- Led full i18n implementation using next-intl, translating 80% of the platform into Spanish and expanding the addressable audience to millions of Spanish-speaking creators worldwide.
+- Delivered the full React Native mobile app for iOS and Android, replicating the complete consumer experience and extending the platform's reach to mobile-first users.
+- Redesigned and rebuilt legacy pages end-to-end — improving UI consistency, component reusability, and Lighthouse performance scores across the platform.
+- Implemented account switcher feature end-to-end across web and React Native, enabling multi-account session management — improving power user retention and UX for creators managing multiple profiles.
+- Adopted Claude Code as a core development tool — increasing ticket throughput by 3–4 tickets per week compared to previous workflows, without sacrificing code quality or test coverage.
 
 Frontend Engineer — Remote (United States)
-Senseg Inc | Feb 2023 – Jun 2023
-- Architected and built Banconect from scratch — a B2B payment and transfer platform for SMEs and enterprises — owning the full frontend including the admin dashboard and payment link flow (Next.js, TypeScript).
-- Developed Shuffle Dating, a fully automated dating platform, independently delivering both the client-facing app and the admin dashboard end-to-end, from architecture decisions to production deployment — still live today (Next.js, TypeScript).
-- Operated autonomously in a fast-paced startup environment, making critical technical decisions and delivering two complete products within 5 months.
+Senseg Inc (Founding Engineer — Team of 4)  |  Feb 2023 – Jun 2023
+
+- Architected and built Banconect from scratch — a B2B payment and transfer platform for SMEs and enterprises — owning the full frontend including admin dashboard and payment link flow, from system design to production deployment (Next.js, TypeScript).
+- Designed and shipped Shuffle Dating end-to-end — a fully automated dating platform including client-facing app and admin dashboard — making all architectural decisions independently and taking the product to production in under 3 months. Still live today.
+- Delivered two complete production-ready products in 5 months, operating autonomously in a fast-paced startup environment with no PM or dedicated designer.
 
 Frontend Engineer
-NUO Corp · Quito, Ecuador | Apr 2021 – Feb 2023
-- Led frontend development of Ecuador's first physical SelfCheckout for Corporación Favorita — the largest supermarket chain in Ecuador, operating under the Supermaxi brand — integrating NCR hardware via WebSockets in real time. Currently used by thousands of shoppers across major cities, including Quito (Quicentro Shopping and CCI) and Guayaquil (Mall del Sol). (React, TypeScript).
-- Developed Scan & Go, a mobile self-checkout experience for Corporación Favorita, independently delivering the full product from architecture to production launch (Flutter).
-- Built and maintained multiple frontend products featuring real-time communication, REST API integration, and responsive design — working across web and mobile and collaborating closely with hardware and backend teams.
+NUO Corp · Quito, Ecuador  |  Apr 2021 – Feb 2023
+
+- Led frontend development of Ecuador's first physical SelfCheckout for Corporación Favorita — the largest supermarket chain in Ecuador (Supermaxi) — integrating NCR hardware via WebSockets in real time. Currently used by thousands of shoppers daily across Quito (Quicentro Shopping, CCI) and Guayaquil (Mall del Sol). (React, TypeScript)
+- Engineered Scan & Go — a mobile self-checkout experience for Corporación Favorita — delivering the full product from architecture to production launch, reducing in-store friction for mobile-first shoppers. (Flutter)
+- Built and maintained multiple frontend products featuring real-time communication and REST API integration, collaborating closely with hardware and backend teams across web and mobile platforms.
 
 Software Developer — Internship
-Fenix Corp · Latacunga, Ecuador | Sep 2020 – Feb 2021
-- Originally hired on a 2-month contract; performance led to a 4-month extension, totaling 6 months with the company.
-- Designed and built desktop applications from scratch using .NET Framework and Windows Forms (C#), delivering functional tools used internally by the company.
-- Developed reusable DLL libraries integrated into existing enterprise systems, improving modularity and reducing code duplication across projects.
+Fenix Corp · Latacunga, Ecuador  |  Sep 2020 – Feb 2021
+
+- Built desktop applications from scratch using .NET Framework and Windows Forms (C#), delivering internal tools used daily by company staff — hired on a 2-month contract, extended to 6 months based on performance.
+- Developed reusable DLL libraries integrated into existing enterprise systems, reducing code duplication and improving maintainability across internal projects.
+
+─────────────────────────────────────────────────────
+
+PROJECTS
+
+Resume Chatbot — robert-barahona.dev
+AI-powered portfolio chatbot built with Next.js, TypeScript, and Anthropic API. Allows recruiters to interactively ask questions about my professional profile via streaming responses. Deployed on Vercel with GitHub Actions CI/CD.
+
+Interview Simulator — In development
+AI-powered mock interview tool using voice recognition and Anthropic API to generate role-specific questions, evaluate responses, and provide structured feedback. Built with Next.js and TypeScript.
+
+─────────────────────────────────────────────────────
 
 EDUCATION
+
 B.Sc. in Software Engineering
 Universidad de las Fuerzas Armadas ESPE · Ecuador
-- 6× scholarship recipient for academic excellence.
 
-KEY ACHIEVEMENTS
+- 6× scholarship recipient for academic excellence.
 - Speaker at the 2022 2nd International Conference on Computer and Communication Engineering — Rome, Italy.
-- Early adopter of AI-assisted development: integrated Claude Code into daily workflow at Passes Inc, consistently shipping 3–4 more tickets per week and handling more complex tasks with confidence.
-- Delivered two complete frontend products at Senseg within 5 months, making independent architectural decisions and taking both from zero to production.
-- Led the frontend of Ecuador's first physical SelfCheckout, a high-stakes, hardware-integrated project now deployed across multiple cities and used by thousands of shoppers daily.
+
+─────────────────────────────────────────────────────
 
 CERTIFICATIONS
+
 - Claude Code 101 — Anthropic, 2026
 `
